@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>電子書籍リスト</title>
+  <style>
+   /* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+
+#book-list {
+  list-style: none;
+  padding: 0;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#book-list li {
+  margin: 25px 0;
+  display: flex;
+  align-items: stretch;
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#book-list li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+#book-list img {
+  width: 120px;
+  height: 160px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+#book-list .book-info {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+#book-list .book-info a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #3498db;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+#book-list .book-info a:hover {
+  color: #2980b9;
+}
+
+#book-list .book-info p {
+  margin: 0;
+  color: #7f8c8d;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  #book-list li {
+    flex-direction: column;
+  }
+
+  #book-list img {
+    width: 100%;
+    height: 200px;
+  }
+
+  #book-list .book-info {
+    padding: 15px;
+  }
+}
+  </style>
+</head>
+<body>
+  <h1>電子書籍一覧</h1>
+  <ul id="book-list">
+    <li>
+      <img src="https://images.clubt.jp/thumbs/10947/211343/1.jpg?v=1685383876.893816" alt="Book 1">
+      <div class="book-info">
+        <a href="https://online.fliphtml5.com/pmmuh/lhqc/">実話！世界を震撼させたハッカー集団『anonymous』の正体</a>
+        <p>この本は、デザインの基本を学ぶための素晴らしいリソースです。</p>
+      </div>
+    </li>
+    <li>
+      <img src="https://via.placeholder.com/120x160?text=Book+2" alt="Book 2">
+      <div class="book-info">
+        <a href="https://online.fliphtml5.com/abcd/efgh/">Book 2</a>
+        <p>旅行に関するアイデアやインスピレーションが詰まっています。</p>
+      </div>
+    </li>
+    <li>
+      <img src="https://via.placeholder.com/120x160?text=Book+3" alt="Book 3">
+      <div class="book-info">
+        <a href="https://online.fliphtml5.com/ijkl/mnop/">Book 3</a>
+        <p>新しい料理のレシピを発見できるクックブックです。</p>
+      </div>
+    </li>
+  </ul>
+</body>
+</html>
